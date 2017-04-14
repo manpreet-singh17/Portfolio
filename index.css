@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+html,body{
+	width: 100%;
+	height: 100%;
+}
+
+/*********** CSS RULES FOR NAVBAR***********/
+nav.navbar {
+	border-radius: 0px;
+	background-color: #510B74;
+	color: white;
+	margin-bottom: -1px;
+	padding: 6px 0px;
+}
+
+div#mainNavbar {
+	margin-right: 25px;
+}
+
+#mainNavbar>ul>li a {
+	font-family: "Verdana", Times, serif;
+	font-style: normal;
+	font-size: 14px;
+	color: white;
+	
+}
+/*************** END OF NAV BAR RULES*****************/
+
+/**********************JUMBOTRON CSS RULES ****************/
+.jumboImage{
+	width: 100%;
+}
+.jumboImage>div>div{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.overlay{
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 1; 
+	background-color: rgba(0,0,0,0.3);
+}
+
+#overlayContent{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-ms-transform: translate(-50%, -50%);/* for IE9 */
+	-webkit-transform: translate(-50%, -50%);/* for safari */
+	transform: translate(-50%, -50%);/* standard syntax */
+	z-index: 2;
+	color: white;
+}
+#overlayContent>a{
+	border-radius: 0px;
+	border: none;
+	padding: 14px 28px;
+	cursor: pointer;
+}
+/**********************JUMBOTRON CSS RULES ENDS **********************/
+
+/******************NAVIGATION PILLS CSS RULES****************/
+#navpillsBar>div>#column1 {
+	background-color: #510B74;
+}
+
+#navpillsBar>div>#column1>ul>li>a {
+	font-family: "Verdana", Times, serif;
+	font-style: normal;
+	font-size: 14px;
+	color: white;
+}
+
+#navpillsBar>div>#column1>ul>li>a:hover {
+	background-color: #FF7833;
+	border-radius: 0px;
+}
+
+#navpillsBar>div>#column1>ul>.active>a {
+	background-color: #FF7833;
+	border-radius: 0px;
+	color: white;
+}
+/******************NAVIGATION PILLS CSS RULES END ****************/
+
+/****************** BODY CONTENT CSS RULES ***********************/
+#bodyContent>#mainContent>#home {
+	font-family: cursive;
+}
+/****************** BODY CONTENT CSS RULES ENDS ***********************/
+
+/************ PARALLAX CSS RULES *********************************/
+.parallax{
+	background-image: url(Images/banner-bg.jpg);
+	width: 100%;
+	height: 30%;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/************ PARALLAX CSS RULES ENDS *********************************/
+
+/************************** FOOTER CSS RULES***************************/
+#footer{
+	height: 200px;
+	background-color: #171717;
+}
+
+#address{
+	color: white;
+	border-right: 1px solid white;
+}
+#footerRow{
+	border-bottom: 1px solid white;
+}
+#footerRow>#secondCol{
+	position: relative;
+	left: 30px;
+	padding-top: 4%;
+	padding-left: 30%;
+}
+#footerRow>#secondCol>.fa{
+	padding: 20px;
+	font-size: 30px;
+	width: 70px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 50%;
+}
+#secondCol>a{
+	margin-right: 10px;
+}
+#footerRow>#secondCol>.fa-linkedin{
+	background-color: #007BB5;
+	color: white;
+}
+#footerRow>#secondCol>.fa-github{
+	background-color: #510B74;
+	color: white;
+}
+#footerRow>#secondCol>.fa-twitter{
+	background-color: #77BCF1;
+	color: white;
+}
+#footerRow>#secondCol>.fa-rss{
+	background-color: #FF8433;
+	color: white;
+}
