@@ -87,9 +87,30 @@ div#mainNavbar {
 /******************NAVIGATION PILLS CSS RULES END ****************/
 
 /****************** BODY CONTENT CSS RULES ***********************/
-#bodyContent>#mainContent>#home {
-	font-family: cursive;
+#bodyContent{
+	margin-top: 2%;
 }
+#bodyContent>#row1>#row1col2>img{
+	height: 250px;	
+	margin-left: 35%;
+}
+
+#bodyContent>#row2{
+	padding: 4%;
+}
+#bodyContent>#row2>#row2col1>img{
+	height: 270px;
+	margin-right: 20%;
+}
+
+#bodyContent>#row3{
+	padding: 2%;
+}
+#bodyContent>#row3>#row3col2>img{
+	height: 270px;
+	margin-left: 35%;
+}
+
 /****************** BODY CONTENT CSS RULES ENDS ***********************/
 
 /************ PARALLAX CSS RULES *********************************/
@@ -117,13 +138,13 @@ div#mainNavbar {
 #footerRow{
 	border-bottom: 1px solid white;
 }
-#footerRow>#secondCol{
+#footerRow>#footerRowcol1{
 	position: relative;
 	left: 30px;
 	padding-top: 4%;
 	padding-left: 30%;
 }
-#footerRow>#secondCol>.fa{
+#footerRow>#footerRowcol1>.fa{
 	padding: 20px;
 	font-size: 30px;
 	width: 70px;
@@ -131,22 +152,34 @@ div#mainNavbar {
 	text-decoration: none;
 	border-radius: 50%;
 }
-#secondCol>a{
+#footerRowcol1>a{
 	margin-right: 10px;
 }
-#footerRow>#secondCol>.fa-linkedin{
+
+#footerRowcol1>p{
+	color: white;
+	padding-top: 12px;
+    padding-left: 21px;
+}
+#footerRow>#footerRowcol1>.fa-linkedin{
 	background-color: #007BB5;
 	color: white;
 }
-#footerRow>#secondCol>.fa-github{
+#footerRow>#footerRowcol1>.fa-github{
 	background-color: #510B74;
 	color: white;
 }
-#footerRow>#secondCol>.fa-twitter{
+#footerRow>#footerRowcol1>.fa-twitter{
 	background-color: #77BCF1;
 	color: white;
 }
-#footerRow>#secondCol>.fa-rss{
+#footerRow>#footerRowcol1>.fa-rss{
 	background-color: #FF8433;
 	color: white;
+}
+
+#copyRightText{
+	color: white;
+    margin-left: 39%;
+    margin-bottom: 0px;
 }

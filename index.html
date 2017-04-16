@@ -64,47 +64,38 @@
 	</div>
 	<!-- jumbotron image ends -->
 
-	<!-- Navigation pills to move body content starts -->
-	<div class="container-fluid" id="navpillsBar">
-		<div class="row">
-			<div class="col-md-12" id="column1">
-				<ul class="nav nav-pills nav-justified">
-					<li class="active"><a href="#home" data-toggle="pill">Home</a></li>
-					<li><a href="#gallery" data-toggle="pill">Gallery</a></li>
-					<li><a href="#contactMe" data-toggle="pill">Contact Me</a></li>
-					<li><a href="#aboutMe" data-toggle="pill">About Me</a></li>
-				</ul>
+	<!-- body content starts here. -->
+	<div class="container-fluid" id="bodyContent">
+		<div class="row" id="row1">
+			<div class="col-md-6" id="row1col1">
+				<h2 class="center-block text-justify">Home Content Here</h2>
+				<p>Lorem ipsum dolor sit amet, inimicus gloriatur ei sea, in per soluta docendi accommodare, ad mel illum laoreet lobortis. Ipsum deleniti pro an. Vel ludus clita ad, no mei unum assum dolores. Scripta oblique te pri. Eos pertinacia accommodare no. Omnes decore tempor id usu, nec ei nominati indoctum neglegentur, ut vide vidit eos. Cu dicit nostro voluptaria eum, an utinam legere vel.</p>
+			</div>
+			<div class="col-md-6" id="row1col2">
+				<img src="Images/ipad.png" class="img-responsive" />
+			</div>
+		</div>
+		<div class="row" id="row2">
+			<div class="col-md-6" id="row2col1">
+				<img src="Images/phones.png" class="img-reslponsive" />
+			</div>
+			<div class="col-md-6" id="row2col2">
+				<h2 class="center-block text-justify text-nowrap">About Me Content Here</h2>
+				<p>Lorem ipsum dolor sit amet, inimicus gloriatur ei sea, in per soluta docendi accommodare, ad mel illum laoreet lobortis. Ipsum deleniti pro an. Vel ludus clita ad, no mei unum assum dolores. Scripta oblique te pri. Eos pertinacia accommodare no. Omnes decore tempor id usu, nec ei nominati indoctum neglegentur, ut vide vidit eos. Cu dicit nostro voluptaria eum, an utinam legere vel.</p>
+			</div>
+		</div>
+		<div class="row" id="row3">
+			<div class="col-md-6" id="row3col1">
+				<h2 class="center-block text-justify text-nowrap">Contact Me Content Here</h2>
+				<p>Lorem ipsum dolor sit amet, inimicus gloriatur ei sea, in per soluta docendi accommodare, ad mel illum laoreet lobortis. Ipsum deleniti pro an. Vel ludus clita ad, no mei unum assum dolores. Scripta oblique te pri. Eos pertinacia accommodare no. Omnes decore tempor id usu, nec ei nominati indoctum neglegentur, ut vide vidit eos. Cu dicit nostro voluptaria eum, an utinam legere vel.</p>
+			</div>
+			<div class="col-md-6" id="row3col2">
+				<img src="Images/dog.png" class="img-responsive" />
 			</div>
 		</div>
 	</div>
-	<!-- Navigation pills for body content ends -->
-	
-	<!-- Body content starts -->
-	<div class="container" id="bodyContent">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="tab-content" id="mainContent">
-					<div id="home" class="tab-pane fade in active">
-						<h3>HOME</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div id="contactMe" class="tab-pane fade in">
-						<h3>Contac me</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div id="aboutMe" class="tab-pane fade in">
-						<h3>About me</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-					<div id="gallery" class="tab-pane fade in">
-						<h3>Gallery</h3>
-						<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- Body Content ends -->
+
+	<!-- body content ends here. -->
 
 	<!-- bottom image parallax effect. -->
 	<div class="parallax"></div>
@@ -113,23 +104,20 @@
 		<footer>
 			<div class="container">
 				<div class="row" id="footerRow">
-					<div class="col-md-2">
-						<div id="address" class="text-center">
-							<h2>ADDRESS</h2>
-							<p>46 Reding Street</p>
-							<p>Takanini, 2112</p>
-							<h4>Auckland</h4>
-						</div>
-					</div>
-					<div class="col-md-8" id="secondCol">
+					<div class="col-md-12" id="footerRowcol1">
 						<a href="#" class="fa fa-linkedin"></a>
 						<a href="#" class="fa fa-github"></a>
 						<a href="#" class="fa fa-twitter"></a>
 						<a href="#" class="fa fa-rss"></a>
+						<p>
+							<span>46 Reding Street</span>|
+							<span>Takanini, 2112</span> |
+							<span>Auckland</span>
+						</p>
 					</div>
 				</div>
-				<p class="text-center" style="color: white;">Powered by MP Singh.</p>
 			</div>
+			<p id="copyRightText">&copy; Reserved By MP Singh</p>
 		</footer>
 	</div>
 
