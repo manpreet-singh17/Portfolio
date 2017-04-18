@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-html,body{
+html,
+body {
 	width: 100%;
 	height: 100%;
 }
 
+
 /*********** CSS RULES FOR NAVBAR***********/
+
 nav.navbar {
 	border-radius: 0px;
 	background-color: #510B74;
@@ -22,47 +24,60 @@ div#mainNavbar {
 	font-style: normal;
 	font-size: 14px;
 	color: white;
-	
 }
+
+
 /*************** END OF NAV BAR RULES*****************/
 
+
 /**********************JUMBOTRON CSS RULES ****************/
-.jumboImage{
+
+.jumboImage {
 	width: 100%;
 }
-.jumboImage>div>div{
+
+.jumboImage>div>div {
 	padding-right: 0px;
 	padding-left: 0px;
 }
-.overlay{
+
+.overlay {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	z-index: 1; 
-	background-color: rgba(0,0,0,0.3);
+	z-index: 1;
+	background-color: rgba(0, 0, 0, 0.3);
 }
 
-#overlayContent{
+#overlayContent {
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	-ms-transform: translate(-50%, -50%);/* for IE9 */
-	-webkit-transform: translate(-50%, -50%);/* for safari */
-	transform: translate(-50%, -50%);/* standard syntax */
+	-ms-transform: translate(-50%, -50%);
+	/* for IE9 */
+	-webkit-transform: translate(-50%, -50%);
+	/* for safari */
+	transform: translate(-50%, -50%);
+	/* standard syntax */
 	z-index: 2;
 	color: white;
 }
-#overlayContent>a{
+
+#overlayContent>a {
 	border-radius: 0px;
 	border: none;
 	padding: 14px 28px;
 	cursor: pointer;
 }
+
+
 /**********************JUMBOTRON CSS RULES ENDS **********************/
 
+
 /******************NAVIGATION PILLS CSS RULES****************/
+
 #navpillsBar>div>#column1 {
 	background-color: #510B74;
 }
@@ -84,37 +99,74 @@ div#mainNavbar {
 	border-radius: 0px;
 	color: white;
 }
+
+
 /******************NAVIGATION PILLS CSS RULES END ****************/
 
+
 /****************** BODY CONTENT CSS RULES ***********************/
-#bodyContent{
+
+#bodyContent {
 	margin-top: 2%;
 }
-#bodyContent>#row1>#row1col2>img{
-	height: 250px;	
+
+#bodyContent>#row1>#row1col2>img {
+	height: 250px;
 	margin-left: 35%;
 }
 
-#bodyContent>#row2{
+#bodyContent>#row2 {
 	padding: 4%;
 }
-#bodyContent>#row2>#row2col1>img{
+
+#bodyContent>#row2>#row2col1>img {
 	height: 270px;
 	margin-right: 20%;
 }
 
-#bodyContent>#row3{
+#bodyContent>#row3 {
 	padding: 2%;
 }
-#bodyContent>#row3>#row3col2>img{
+
+#bodyContent>#row3>#row3col2>img {
 	height: 270px;
 	margin-left: 35%;
 }
 
+
+/*******************CSS RULES CONTACT FORM*****************************/
+
+.controlFormat {
+	border-radius: 0px;
+	padding: 4%;
+}
+
+#btn-submit {
+	border-radius: 0px;
+	padding: 2% 6%;
+}
+
+#row3 {
+	/*border: 1px solid;*/
+}
+
+#row3col2>iframe {
+	padding: 5%;
+	width: 100%;
+	height: 300px;
+	margin-left: 20%;
+}
+
+
+/*******************CSS RULES CONTACT FORM ENDS************************/
+
+
 /****************** BODY CONTENT CSS RULES ENDS ***********************/
 
+
 /************ PARALLAX CSS RULES *********************************/
-.parallax{
+
+.parallax {
 	background-image: url(Images/banner-bg.jpg);
 	width: 100%;
 	height: 40%;
@@ -123,28 +175,35 @@ div#mainNavbar {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+
 /************ PARALLAX CSS RULES ENDS *********************************/
 
+
 /************************** FOOTER CSS RULES***************************/
-#footer{
+
+#footer {
 	height: 200px;
 	background-color: #171717;
 }
 
-#address{
+#address {
 	color: white;
 	border-right: 1px solid white;
 }
-#footerRow{
+
+#footerRow {
 	border-bottom: 1px solid white;
 }
-#footerRow>#footerRowcol1{
+
+#footerRow>#footerRowcol1 {
 	position: relative;
 	left: 30px;
 	padding-top: 4%;
 	padding-left: 30%;
 }
-#footerRow>#footerRowcol1>.fa{
+
+#footerRow>#footerRowcol1>.fa {
 	padding: 20px;
 	font-size: 30px;
 	width: 70px;
@@ -152,34 +211,39 @@ div#mainNavbar {
 	text-decoration: none;
 	border-radius: 50%;
 }
-#footerRowcol1>a{
+
+#footerRowcol1>a {
 	margin-right: 10px;
 }
 
-#footerRowcol1>p{
+#footerRowcol1>p {
 	color: white;
 	padding-top: 12px;
-    padding-left: 21px;
+	padding-left: 21px;
 }
-#footerRow>#footerRowcol1>.fa-linkedin{
+
+#footerRow>#footerRowcol1>.fa-linkedin {
 	background-color: #007BB5;
 	color: white;
 }
-#footerRow>#footerRowcol1>.fa-github{
+
+#footerRow>#footerRowcol1>.fa-github {
 	background-color: #510B74;
 	color: white;
 }
-#footerRow>#footerRowcol1>.fa-twitter{
+
+#footerRow>#footerRowcol1>.fa-twitter {
 	background-color: #77BCF1;
 	color: white;
 }
-#footerRow>#footerRowcol1>.fa-rss{
+
+#footerRow>#footerRowcol1>.fa-rss {
 	background-color: #FF8433;
 	color: white;
 }
 
-#copyRightText{
+#copyRightText {
 	color: white;
-    margin-left: 39%;
-    margin-bottom: 0px;
+	margin-left: 39%;
+	margin-bottom: 0px;
 }
