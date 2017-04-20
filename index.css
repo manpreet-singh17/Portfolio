@@ -8,22 +8,20 @@ body {
 /*********** CSS RULES FOR NAVBAR***********/
 
 nav.navbar {
+	background-color: #FFFFFF;
 	border-radius: 0px;
-	background-color: #510B74;
-	color: white;
-	margin-bottom: -1px;
-	padding: 6px 0px;
+	padding: 1% 4%;
 }
 
-div#mainNavbar {
-	margin-right: 25px;
+.navbar-default {
+	border: 0px;
 }
 
 #mainNavbar>ul>li a {
 	font-family: "Verdana", Times, serif;
 	font-style: normal;
-	font-size: 14px;
-	color: white;
+	font-size: 16px;
+	color: black;
 }
 
 
@@ -32,13 +30,13 @@ div#mainNavbar {
 
 /**********************JUMBOTRON CSS RULES ****************/
 
-.jumboImage {
-	width: 100%;
+#headerImage {
+	margin-top: 6%;
 }
 
-.jumboImage>div>div {
-	padding-right: 0px;
+#headerImage>div>div {
 	padding-left: 0px;
+	padding-right: 0px;
 }
 
 .overlay {
@@ -65,103 +63,19 @@ div#mainNavbar {
 	color: white;
 }
 
-#overlayContent>a {
+#follow-me-btn>a {
 	border-radius: 0px;
 	border: none;
 	padding: 14px 28px;
 	cursor: pointer;
 }
 
+#follow-me-btn>a {
+	white-space: normal;
+}
+
 
 /**********************JUMBOTRON CSS RULES ENDS **********************/
-
-
-/******************NAVIGATION PILLS CSS RULES****************/
-
-#navpillsBar>div>#column1 {
-	background-color: #510B74;
-}
-
-#navpillsBar>div>#column1>ul>li>a {
-	font-family: "Verdana", Times, serif;
-	font-style: normal;
-	font-size: 14px;
-	color: white;
-}
-
-#navpillsBar>div>#column1>ul>li>a:hover {
-	background-color: #FF7833;
-	border-radius: 0px;
-}
-
-#navpillsBar>div>#column1>ul>.active>a {
-	background-color: #FF7833;
-	border-radius: 0px;
-	color: white;
-}
-
-
-/******************NAVIGATION PILLS CSS RULES END ****************/
-
-
-/****************** BODY CONTENT CSS RULES ***********************/
-
-#bodyContent {
-	margin-top: 2%;
-}
-
-#bodyContent>#row1>#row1col2>img {
-	height: 250px;
-	margin-left: 35%;
-}
-
-#bodyContent>#row2 {
-	padding: 4%;
-}
-
-#bodyContent>#row2>#row2col1>img {
-	height: 270px;
-	margin-right: 20%;
-}
-
-#bodyContent>#row3 {
-	padding: 2%;
-}
-
-#bodyContent>#row3>#row3col2>img {
-	height: 270px;
-	margin-left: 35%;
-}
-
-
-/*******************CSS RULES CONTACT FORM*****************************/
-
-.controlFormat {
-	border-radius: 0px;
-	padding: 4%;
-}
-
-#btn-submit {
-	border-radius: 0px;
-	padding: 2% 6%;
-}
-
-#row3 {
-	/*border: 1px solid;*/
-}
-
-#row3col2>iframe {
-	padding: 5%;
-	width: 100%;
-	height: 300px;
-	margin-left: 20%;
-}
-
-
-/*******************CSS RULES CONTACT FORM ENDS************************/
-
-
-/****************** BODY CONTENT CSS RULES ENDS ***********************/
 
 
 /************ PARALLAX CSS RULES *********************************/
@@ -182,68 +96,55 @@ div#mainNavbar {
 
 /************************** FOOTER CSS RULES***************************/
 
-#footer {
-	height: 200px;
-	background-color: #171717;
+footer {
+	background-color: black;
+}
+
+#footer-content {
+	padding: 2%;
+}
+
+#footer-content>a{
+	text-decoration: none;
+	text-align: center;
+	width: 4%;
+}
+
+#footer-content>a>.fa {
+	padding: 14px;
+	border-radius: 50%;
+}
+
+#footer-content>a>i {
+	margin-right: 2%;
 }
 
 #address {
 	color: white;
-	border-right: 1px solid white;
-}
-
-#footerRow {
-	border-bottom: 1px solid white;
-}
-
-#footerRow>#footerRowcol1 {
-	position: relative;
-	left: 30px;
-	padding-top: 4%;
-	padding-left: 30%;
-}
-
-#footerRow>#footerRowcol1>.fa {
-	padding: 20px;
-	font-size: 30px;
-	width: 70px;
-	text-align: center;
-	text-decoration: none;
-	border-radius: 50%;
-}
-
-#footerRowcol1>a {
-	margin-right: 10px;
-}
-
-#footerRowcol1>p {
-	color: white;
-	padding-top: 12px;
-	padding-left: 21px;
-}
-
-#footerRow>#footerRowcol1>.fa-linkedin {
-	background-color: #007BB5;
-	color: white;
-}
-
-#footerRow>#footerRowcol1>.fa-github {
-	background-color: #510B74;
-	color: white;
-}
-
-#footerRow>#footerRowcol1>.fa-twitter {
-	background-color: #77BCF1;
-	color: white;
-}
-
-#footerRow>#footerRowcol1>.fa-rss {
-	background-color: #FF8433;
-	color: white;
+	padding-top: 2%;
 }
 
 #copyRightText {
 	color: white;
-	margin-left: 39%;
-	margin-bottom: 0px;
+	padding: 0px;
+}
+
+#footer-content>a>.fa-linkedin {
+	background-color: #007BB5;
+	color: white;
+}
+
+#footer-content>a>.fa-github {
+	background-color: #510B74;
+	color: white;
+}
+
+#footer-content>a>.fa-twitter {
+	background-color: #77BCF1;
+	color: white;
+}
+
+#footer-content>a>.fa-rss {
+	background-color: #FF8433;
+	color: white;
 }
