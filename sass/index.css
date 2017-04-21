@@ -1,0 +1,140 @@
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+/*==================SASS VARIABLES=================*/
+/*============SASS VARIABLES ENDS HERE=================*/
+/*********** CSS RULES FOR NAVBAR***********/
+nav.navbar {
+  border-bottom: 5px solid #2F937B;
+  border-radius: 0px;
+  padding: 1% 4%; }
+
+.navbar-default {
+  border: 0px; }
+
+#mainNavbar > ul > li a {
+  font-family: "Verdana", Times, serif;
+  font-style: normal;
+  font-size: 16px;
+  color: black; }
+
+/*************** END OF NAV BAR RULES*****************/
+/**********************JUMBOTRON CSS RULES ****************/
+#headerImage {
+  background-image: url(../Images/finalBanner.png);
+  background-size: cover;
+  height: 400px;
+  background-position: center;
+  background-repeat: no-repeat;
+  /*	background-attachment: fixed;*/ }
+
+#jumboSection {
+  margin-top: 6%; }
+
+#jumboSection > div > div {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+#overlayContent {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  /* for IE9 */
+  -webkit-transform: translate(-50%, -50%);
+  /* for safari */
+  transform: translate(-50%, -50%);
+  /* standard syntax */
+  z-index: 2;
+  color: white; }
+
+#follow-me-btn > a {
+  border-radius: 0px;
+  border: none;
+  padding: 12px 28px;
+  margin: 8px;
+  cursor: pointer; }
+
+#follow-me-btn > a {
+  white-space: normal; }
+
+/**********************JUMBOTRON CSS RULES ENDS **********************/
+/*====================BODY CONTENT CSS RULES=========================*/
+#aboutMeHeader > span::after {
+  content: "";
+  border-bottom: 2px solid #2F937B;
+  display: block;
+  width: 400px;
+  position: relative;
+  left: 35%;
+  padding-top: 6px; }
+
+#bioInfoTable > tbody > tr > td {
+  border: none; }
+
+/*================BODY CONTENT CSS RULES ENDS HERE======================*/
+/************ PARALLAX CSS RULES *********************************/
+.parallax {
+  background-image: url(../Images/banner-bg.jpg);
+  width: 100%;
+  height: 40%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+/************ PARALLAX CSS RULES ENDS *********************************/
+/************************** FOOTER CSS RULES***************************/
+footer > .container-fluid {
+  background-color: black; }
+
+#footer-content {
+  padding: 2%; }
+
+#footer-content > a {
+  text-decoration: none;
+  text-align: center; }
+
+#footer-content > a > .fa {
+  padding: 11px;
+  border-radius: 50%; }
+
+#footer-content > a > i {
+  margin-right: 2%; }
+
+#address {
+  color: #F8F8F8;
+  padding-top: 2%; }
+
+#copyRightText {
+  color: white;
+  padding: 0px; }
+
+#footer-content > a > .fa-linkedin {
+  background-color: #007BB5;
+  color: white; }
+
+#footer-content > a > .fa-github {
+  background-color: #510B74;
+  color: white; }
+
+#footer-content > a > .fa-twitter {
+  background-color: #77BCF1;
+  color: white; }
+
+#footer-content > a > .fa-rss {
+  background-color: #FF8433;
+  color: white; }
+
+/*# sourceMappingURL=index.css.map */
