@@ -4,11 +4,11 @@ body {
 	height: 100%;
 }
 
-
 /*********** CSS RULES FOR NAVBAR***********/
 
 nav.navbar {
-	background-color: #FFFFFF;
+	border-bottom: 5px solid #2F937B;
+	/*background-color: #FFFFFF;*/
 	border-radius: 0px;
 	padding: 1% 4%;
 }
@@ -30,11 +30,19 @@ nav.navbar {
 
 /**********************JUMBOTRON CSS RULES ****************/
 
-#headerImage {
+#headerImage{
+	background-image: url(Images/finalBanner.png);
+	background-size: cover;
+	height: 400px;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#jumboSection {
 	margin-top: 6%;
 }
 
-#headerImage>div>div {
+#jumboSection>div>div {
 	padding-left: 0px;
 	padding-right: 0px;
 }
@@ -66,7 +74,8 @@ nav.navbar {
 #follow-me-btn>a {
 	border-radius: 0px;
 	border: none;
-	padding: 14px 28px;
+	padding: 12px 28px;
+	margin: 8px;
 	cursor: pointer;
 }
 
@@ -96,7 +105,7 @@ nav.navbar {
 
 /************************** FOOTER CSS RULES***************************/
 
-footer {
+footer>.container-fluid {
 	background-color: black;
 }
 
@@ -107,11 +116,10 @@ footer {
 #footer-content>a{
 	text-decoration: none;
 	text-align: center;
-	width: 4%;
 }
 
 #footer-content>a>.fa {
-	padding: 14px;
+	padding: 11px;
 	border-radius: 50%;
 }
 
