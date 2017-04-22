@@ -97,19 +97,33 @@ nav.navbar {
 
 /*====================BODY CONTENT CSS RULES=========================*/
 
-#aboutMeHeader::after {
-    content: "";
-    border-bottom: 2px solid $primary-color;
-    display: block;
-    width: 400px;
-    position: relative;
-    left: 35%;
-    padding-top: 6px;
+
+/*===================ABOUT ME================*/
+
+#aboutMeHeader {
+    margin: 15px 15px;
+}
+
+#aboutMeHeader>span {
+    border: 1px solid;
+    padding: 1% 2%;
+    background-color: orange;
+    color: white;
 }
 
 #bioInfoTable>tbody>tr>td {
     border: none;
+    padding: 4%;
 }
+
+#skills>tbody>tr>td {
+    border: none;
+    padding: 3%;
+    background-color: yellowgreen;
+}
+
+
+/*===================ABOUT ME ENDS================*/
 
 
 /*================BODY CONTENT CSS RULES ENDS HERE======================*/
@@ -120,7 +134,7 @@ nav.navbar {
 .parallax {
     background-image: url(../Images/banner-bg.jpg);
     width: 100%;
-    height: 40%;
+    height: 50%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
