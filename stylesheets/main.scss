@@ -1,0 +1,40 @@
+$primary-color: #2F937B;
+
+/*===========Import statements=============*/
+
+@import "partials/navbar";
+@import "partials/headerImage";
+@import "partials/aboutme";
+@import "partials/parallax";
+@import "partials/footer";
+
+/*=================RESUME SECTION =======================*/
+
+#resumeContainer {
+    background-color: #F7F7F7;
+}
+
+#educationHeading {
+    border-bottom: 1px solid $primary-color;
+}
+
+#experienceHeading {
+    border-bottom: 1px solid $primary-color;
+}
+
+@media screen and (max-width: 480px) {
+    #resumeHeading {
+        background-color: $primary-color;
+        color: #F8F8F8;
+    }
+}
+
+
+/*======================WORK process Rules=======================*/
+
+@media screen and (max-width: 480px) {
+    #workFlowHeading {
+        background-color: $primary-color;
+        color: #F8F8F8;
+    }
+}

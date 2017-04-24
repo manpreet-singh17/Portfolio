@@ -1,0 +1,18 @@
+/*********** CSS RULES FOR NAVBAR***********/
+
+nav.navbar {
+    border-bottom: 5px solid $primary-color;
+    border-radius: 0px;
+    padding: 1% 4%;
+}
+
+.navbar-default {
+    border: 0px;
+}
+
+#mainNavbar>ul>li a {
+    font-family: "Verdana", Times, serif;
+    font-style: normal;
+    font-size: 16px;
+    color: black;
+}

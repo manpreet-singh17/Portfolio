@@ -1,0 +1,63 @@
+/************************** FOOTER CSS RULES***************************/
+
+footer>.container-fluid {
+    background-color: black;
+}
+
+#footer-content {
+    padding: 2%;
+}
+
+#footer-content>a {
+    text-decoration: none;
+    text-align: center;
+}
+
+#footer-content>a>.fa {
+    padding: 14px;
+    border-radius: 50%;
+}
+
+#footer-content>a>i {
+    margin-right: 2%;
+}
+
+#address {
+    color: #F8F8F8;
+    padding-top: 2%;
+}
+
+#copyRightText {
+    color: #F8F8F8;
+    padding: 0px;
+}
+
+#footer-content>a>.fa-linkedin {
+    background-color: #007BB5;
+    color: white;
+}
+
+#footer-content>a>.fa-github {
+    background-color: #510B74;
+    color: white;
+}
+
+#footer-content>a>.fa-twitter {
+    background-color: #77BCF1;
+    color: white;
+}
+
+#footer-content>a>.fa-rss {
+    background-color: #FF8433;
+    color: white;
+}
+
+@media screen and (max-width: 480px) {
+    #footer-content>a>.fa {
+        padding: 12px;
+    }
+    #footer-content>a>i {
+        margin-right: 4%;
+        margin-top: 7px;
+    }
+}

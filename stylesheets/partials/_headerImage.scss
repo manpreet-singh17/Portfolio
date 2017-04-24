@@ -1,0 +1,58 @@
+/**********************JUMBOTRON CSS RULES ****************/
+
+#headerImage {
+    background-image: url(../Images/finalBanner.png);
+    background-size: cover;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    /*	background-attachment: fixed;*/
+}
+
+#jumboSection {
+    margin-top: 6%;
+}
+
+#jumboSection>div>div {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+#overlayContent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    /* for IE9 */
+    -webkit-transform: translate(-50%, -50%);
+    /* for safari */
+    transform: translate(-50%, -50%);
+    /* standard syntax */
+    z-index: 2;
+    color: white;
+}
+
+#follow-me-btn>a {
+    border-radius: 0px;
+    border: none;
+    padding: 12px 28px;
+    margin: 8px;
+    cursor: pointer;
+}
+
+#follow-me-btn>a {
+    white-space: normal;
+}
+
+
+/**********************JUMBOTRON CSS RULES ENDS **********************/
