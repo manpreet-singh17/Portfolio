@@ -1,7 +1,7 @@
 /*===========Import statements=============*/
 /*********** CSS RULES FOR NAVBAR***********/
 nav.navbar {
-  border-bottom: 5px solid #2F937B;
+  border-bottom: 5px solid #009690;
   border-radius: 0px;
   padding: 1% 4%; }
 
@@ -44,11 +44,7 @@ nav.navbar {
   top: 50%;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
-  /* for IE9 */
-  -webkit-transform: translate(-50%, -50%);
-  /* for safari */
-  transform: translate(-50%, -50%);
-  /* standard syntax */
+      transform: translate(-50%, -50%);
   z-index: 2;
   color: white; }
 
@@ -80,22 +76,39 @@ nav.navbar {
   background-color: yellowgreen; }
 
 /************ PARALLAX CSS RULES *********************************/
-.parallax {
-  background-image: url(../Images/banner-bg.jpg);
-  width: 100%;
-  height: 300px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+#parallax div div {
+  padding: 0px; }
+  #parallax div div div {
+    background-image: url(../Images/banner-bg.jpg);
+    width: 100%;
+    height: 300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+    #parallax div div div #contactMebtn {
+      border: 0px;
+      border-radius: 0px;
+      background-color: #009690;
+      padding: 1.5% 4%;
+      position: relative;
+      left: 38%;
+      top: 40%; }
 
 @media screen and (max-width: 480px) {
-  .parallax {
-    height: 150px; } }
+  #parallax div div {
+    padding: 0px; }
+    #parallax div div div {
+      height: 150px; }
+      #parallax div div div #contactMebtn {
+        padding: 8px 12px;
+        left: 92px;
+        top: 56px; } }
+
 /************ PARALLAX CSS RULES ENDS *********************************/
 /************************** FOOTER CSS RULES***************************/
 footer > .container-fluid {
-  background-color: black; }
+  background-color: #2ABB9B; }
 
 #footer-content {
   padding: 2%; }
@@ -138,28 +151,27 @@ footer > .container-fluid {
 @media screen and (max-width: 480px) {
   #footer-content > a > .fa {
     padding: 12px; }
-
   #footer-content > a > i {
     margin-right: 4%;
     margin-top: 7px; } }
+
 /*=================RESUME SECTION =======================*/
 #resumeContainer {
   background-color: #F7F7F7; }
 
 #educationHeading {
-  border-bottom: 1px solid #2F937B; }
+  border-bottom: 1px solid #009690; }
 
 #experienceHeading {
-  border-bottom: 1px solid #2F937B; }
+  border-bottom: 1px solid #009690; }
 
 @media screen and (max-width: 480px) {
   #resumeHeading {
-    background-color: #2F937B;
+    background-color: #009690;
     color: #F8F8F8; } }
+
 /*======================WORK process Rules=======================*/
 @media screen and (max-width: 480px) {
   #workFlowHeading {
-    background-color: #2F937B;
+    background-color: #009690;
     color: #F8F8F8; } }
-
-/*# sourceMappingURL=main.css.map */

@@ -32,12 +32,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    /* for IE9 */
-    -webkit-transform: translate(-50%, -50%);
-    /* for safari */
     transform: translate(-50%, -50%);
-    /* standard syntax */
     z-index: 2;
     color: white;
 }

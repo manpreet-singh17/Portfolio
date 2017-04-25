@@ -1,12 +1,12 @@
-$primary-color: #2F937B;
+$primary-color: #009690;
 
 /*===========Import statements=============*/
 
-@import "partials/navbar";
-@import "partials/headerImage";
-@import "partials/aboutme";
-@import "partials/parallax";
-@import "partials/footer";
+@import "./partialssass/navbar";
+@import "./partialssass/headerImage";
+@import "./partialssass/aboutme";
+@import "./partialssass/parallax";
+@import "./partialssass/footer";
 
 /*=================RESUME SECTION =======================*/
 
