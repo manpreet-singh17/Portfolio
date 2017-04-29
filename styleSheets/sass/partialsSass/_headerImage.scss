@@ -49,5 +49,20 @@
     white-space: normal;
 }
 
+#follow-me-btn {
+    a:hover {
+        background-color: $primary-color;
+        color: white;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: inline-block;
+}
+
 
 /**********************JUMBOTRON CSS RULES ENDS **********************/

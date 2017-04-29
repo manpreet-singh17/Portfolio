@@ -4,10 +4,33 @@ nav.navbar {
     border-bottom: 5px solid $primary-color;
     border-radius: 0px;
     padding: 1% 4%;
+    div {
+        div {
+            button {
+                span {
+                    background-color: red;
+                }
+            }
+        }
+    }
+}
+
+.navbar-default .navbar-toggle {
+    border-color: white;
 }
 
 .navbar-default {
     border: 0px;
+}
+
+#mainNavbar {
+    ul {
+        li {
+            a:hover {
+                color: $primary-color;
+            }
+        }
+    }
 }
 
 #mainNavbar>ul>li a {
