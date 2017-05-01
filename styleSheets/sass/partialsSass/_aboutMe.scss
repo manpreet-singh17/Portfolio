@@ -1,5 +1,24 @@
 /*===================ABOUT ME================*/
 
+#aboutMe {
+    .container {
+        .row {
+            div {
+                .panel {
+                    border: 1px solid $primary-color;
+                    border-radius: 0px;
+                    box-shadow: 0px 0px 4px black;
+                    .panel-heading {
+                        background-color: $primary-color;
+                        color: white;
+                        height: 30px;
+                    }
+                }
+            }
+        }
+    }
+}
+
 #aboutMeHeader>h3 {
     border-bottom: 2px solid;
     border-color: $primary-color;
