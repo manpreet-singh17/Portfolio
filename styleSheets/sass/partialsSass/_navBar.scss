@@ -23,19 +23,14 @@ nav.navbar {
     border: 0px;
 }
 
-#mainNavbar {
-    ul {
-        li {
-            a:hover {
-                color: $primary-color;
-            }
-        }
-    }
-}
-
 #mainNavbar>ul>li a {
     font-family: "Verdana", Times, serif;
     font-style: normal;
     font-size: 16px;
     color: black;
+    transition: color 0.7s;
+}
+
+#mainNavbar>ul>li>a:hover {
+    color: $primary-color;
 }
