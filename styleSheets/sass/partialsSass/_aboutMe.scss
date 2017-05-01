@@ -1,47 +1,93 @@
 /*===================ABOUT ME================*/
 
-#aboutMe {
-    .container {
-        .row {
-            div {
-                .panel {
-                    border: 1px solid $primary-color;
-                    border-radius: 0px;
-                    box-shadow: 0px 0px 4px black;
-                    .panel-heading {
-                        background-color: $primary-color;
-                        color: white;
-                        height: 30px;
-                    }
+.textFormat {
+    text-transform: capitalize;
+    text-indent: 20px;
+    letter-spacing: 2px;
+    line-height: 35px;
+    text-align: justify;
+}
+
+.panelFormat {
+    box-shadow: 0px 0px 2px $primary-color;
+    border-radius: 0px;
+    border: 0px solid;
+}
+
+.panelHeadingFormat {
+    border: 1px solid $primary-color;
+    background-color: $primary-color;
+    border-radius: 0px;
+    color: white;
+    height: 50px;
+    @extend .textFormat;
+    text-indent: 5px;
+}
+
+.panelBodyFormat {
+    border: 1px solid $primary-color;
+    height: 250px;
+    padding: 24px;
+}
+
+#aboutMeHeader>h3 {
+    @extend .textFormat;
+    text-align: center;
+    text-indent: 0px;
+    border-bottom: 1px solid;
+    border-color: $primary-color;
+    padding: 2%;
+    margin-top: 0px;
+    color: $primary-color;
+}
+
+#bioInfo {
+    .panel {
+        @extend .panelFormat;
+        .panel-heading {
+            @extend .panelHeadingFormat;
+        }
+        .panel-body {
+            @extend .panelBodyFormat;
+            p {
+                @extend .textFormat;
+                span {
+                    @extend .textFormat;
                 }
             }
         }
     }
 }
 
-#aboutMeHeader>h3 {
-    border-bottom: 2px solid;
-    border-color: $primary-color;
-    padding: 1% 0%;
-}
-
-#bioInfo {
-    height: 300px;
-    .panel-heading {
-        height: 50px;
-    }
-    .panel-body {
-        p {
-            background-color: yellow;
-            span {
-                margin-left: 10px;
+#FrontEndSkills {
+    .panel {
+        @extend .panelFormat;
+        .panel-heading {
+            @extend .panelHeadingFormat;
+        }
+        .panel-body {
+            @extend .panelBodyFormat;
+            p {
+                @extend .textFormat;
+                text-indent: 0px;
             }
         }
     }
 }
 
-#FrontEndSkills {
-    height: 206px;
-    border: 1px solid lightblue;
-    box-shadow: 0px 0px 4px lightgrey;
+#backEndSkills {
+    .panel {
+        @extend .panelFormat;
+        .panel-heading {
+            @extend .panelHeadingFormat;
+        }
+        .panel-body {
+            @extend .panelBodyFormat;
+            p {
+                @extend .textFormat;
+                text-indent: 0px;
+                line-height: 25px;
+            }
+        }
+    }
 }
