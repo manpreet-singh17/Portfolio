@@ -18,18 +18,97 @@ $primary-color: #D83B01;
 
 /*=================RESUME SECTION =======================*/
 
-#resumeContainer {
-    background-color: #F7F7F7;
+#resume {
+    .container {
+        .row {
+            #col1 {
+                border-right: 1px solid $primary-color;
+                padding: 2px;
+                #educationHead {
+                    h3 {
+                        text-align: center;
+                        color: $primary-color;
+                        padding: 0px;
+                        @extend .textFormat;
+                        overflow: visible;
+                    }
+                }
+                #btechEdu {
+                    h4,
+                    h5 {
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                    p {
+                        padding: 6px;
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                }
+                #auckEdu {
+                    h4,
+                    h5 {
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                    p {
+                        padding: 6px;
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                }
+            }
+            #col2 {
+                #experienceHead {
+                    text-align: center;
+                    color: $primary-color;
+                    padding: 0px;
+                    @extend .textFormat;
+                    overflow: visible;
+                }
+                #indiaExp {
+                    h4,
+                    h5 {
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                    p {
+                        padding: 6px;
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                }
+                #auckExp {
+                    h4,
+                    h5 {
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                    p {
+                        padding: 6px;
+                        @extend .textFormat;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
 }
 
-#educationHeading {
-    border-bottom: 1px solid $primary-color;
+.resumeHeader {
+    h2 {
+        border-bottom: 1px solid $primary-color;
+        border-top: 1px solid $primary-color;
+        padding: 20px;
+        margin: 0px;
+        @extend .textFormat;
+        color: $primary-color;
+        text-align: center;
+    }
 }
 
-#experienceHeading {
-    border-bottom: 1px solid $primary-color;
-}
 
+}
 @media screen and (max-width: 480px) {
     #resumeHeading {
         background-color: $primary-color;
@@ -37,9 +116,7 @@ $primary-color: #D83B01;
     }
 }
 
-
 /*======================WORK process Rules=======================*/
-
 @media screen and (max-width: 480px) {
     #workFlowHeading {
         background-color: $primary-color;
