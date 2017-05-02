@@ -70,7 +70,7 @@
     display: inline-block;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     #follow-me-btn>.btn-default {
         width: 150px;
         background-color: transparent;
@@ -80,6 +80,7 @@
         margin: 10px;
         cursor: pointer;
         color: white;
+        display: block;
     }
 }
 

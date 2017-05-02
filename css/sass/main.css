@@ -1,4 +1,11 @@
 /*===========Import statements=============*/
+.textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p {
+  text-transform: capitalize;
+  letter-spacing: 2px;
+  line-height: 25px;
+  text-align: justify;
+  overflow: auto; }
+
 /*********** CSS RULES FOR NAVBAR***********/
 nav.navbar {
   border-bottom: 5px solid #D83B01;
@@ -83,7 +90,7 @@ nav.navbar {
 .show {
   display: inline-block; }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   #follow-me-btn > .btn-default {
     width: 150px;
     background-color: transparent;
@@ -92,17 +99,11 @@ nav.navbar {
     padding: 12px 31px;
     margin: 10px;
     cursor: pointer;
-    color: white; } }
+    color: white;
+    display: block; } }
 
 /**********************JUMBOTRON CSS RULES ENDS **********************/
 /*===================ABOUT ME================*/
-.textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p {
-  text-transform: capitalize;
-  text-indent: 20px;
-  letter-spacing: 2px;
-  line-height: 35px;
-  text-align: justify; }
-
 .panelFormat, #bioInfo .panel, #FrontEndSkills .panel, #backEndSkills .panel {
   box-shadow: 0px 0px 2px #D83B01;
   border-radius: 0px;
@@ -129,13 +130,6 @@ nav.navbar {
   padding: 2%;
   margin-top: 0px;
   color: #D83B01; }
-
-#FrontEndSkills .panel .panel-body p {
-  text-indent: 0px; }
-
-#backEndSkills .panel .panel-body p {
-  text-indent: 0px;
-  line-height: 25px; }
 
 /************ PARALLAX CSS RULES *********************************/
 #parallax div div {

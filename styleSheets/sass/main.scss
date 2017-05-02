@@ -2,6 +2,14 @@ $primary-color: #D83B01;
 
 /*===========Import statements=============*/
 
+.textFormat {
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 25px;
+    text-align: justify;
+    overflow: auto;
+}
+
 @import "partialssass/navbar";
 @import "partialssass/headerImage";
 @import "partialssass/aboutme";
