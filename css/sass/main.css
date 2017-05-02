@@ -1,5 +1,8 @@
 /*===========Import statements=============*/
-.textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p {
+.textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p, #resume .container .row #col1 #educationHead h3, #resume .container .row #col1 #btechEdu h4,
+#resume .container .row #col1 #btechEdu h5, #resume .container .row #col1 #btechEdu p, #resume .container .row #col1 #auckEdu h4,
+#resume .container .row #col1 #auckEdu h5, #resume .container .row #col1 #auckEdu p, #resume .container #col2 #experienceHead, #resume .container #col2 #indiaExp h4,
+#resume .container #col2 #indiaExp h5, #resume .container #col2 #indiaExp p, #resume .resumeHeader h2 {
   text-transform: capitalize;
   letter-spacing: 2px;
   line-height: 25px;
@@ -212,14 +215,48 @@ footer > .container-fluid {
     margin-top: 7px; } }
 
 /*=================RESUME SECTION =======================*/
-#resumeContainer {
-  background-color: #F7F7F7; }
+#resume .container .row #col1 {
+  border-right: 1px solid #D83B01;
+  padding: 2px; }
+  #resume .container .row #col1 #educationHead h3 {
+    text-align: center;
+    color: #D83B01;
+    padding: 0px;
+    overflow: visible; }
+  #resume .container .row #col1 #btechEdu h4,
+  #resume .container .row #col1 #btechEdu h5 {
+    text-align: center; }
+  #resume .container .row #col1 #btechEdu p {
+    padding: 6px;
+    text-align: center; }
+  #resume .container .row #col1 #auckEdu h4,
+  #resume .container .row #col1 #auckEdu h5 {
+    text-align: center; }
+  #resume .container .row #col1 #auckEdu p {
+    padding: 6px;
+    text-align: center; }
 
-#educationHeading {
-  border-bottom: 1px solid #D83B01; }
+#resume .container #col2 #experienceHead {
+  text-align: center;
+  color: #D83B01;
+  padding: 0px;
+  overflow: visible; }
 
-#experienceHeading {
-  border-bottom: 1px solid #D83B01; }
+#resume .container #col2 #indiaExp h4,
+#resume .container #col2 #indiaExp h5 {
+  text-align: center; }
+
+#resume .container #col2 #indiaExp p {
+  padding: 6px;
+  text-align: center; }
+
+#resume .resumeHeader h2 {
+  border-bottom: 1px solid #D83B01;
+  border-top: 1px solid #D83B01;
+  padding: 20px;
+  margin: 0px;
+  color: #D83B01;
+  text-align: center; }
 
 @media screen and (max-width: 480px) {
   #resumeHeading {
