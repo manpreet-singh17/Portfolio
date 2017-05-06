@@ -21,6 +21,7 @@ $primary-color: #D83B01;
 #resume {
     .container {
         .row {
+            margin: 0px;
             #col1 {
                 padding: 2px;
                 #educationHead {
@@ -109,6 +110,55 @@ $primary-color: #D83B01;
     #resumeHeading {
         background-color: $primary-color;
         color: #F8F8F8;
+    }
+}
+
+
+/*=======================Services CSS Rules=======================*/
+
+#services {
+    #servicesRow1 {
+        #serviceHeader {
+            text-align: center;
+            @extend .textFormat;
+            color: $primary-color;
+            border-top: 1px solid $primary-color;
+            margin-bottom: 3%;
+        }
+    }
+    #servicesRow2 {
+        #frontEndDevServices {
+            border: 1px solid #D83B01;
+            height: 300px;
+            width: 230px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 7%;
+        }
+        #serverDevServices {
+            border: 1px solid #D83B01;
+            height: 300px;
+            width: 230px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 60px;
+        }
+        #desktopDevServices {
+            border: 1px solid #D83B01;
+            height: 300px;
+            width: 230px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 80px;
+        }
+        #dataBaseDevServices {
+            border: 1px solid #D83B01;
+            height: 300px;
+            width: 230px;
+            text-align: center;
+            margin-bottom: 15px;
+            margin-left: 80px;
+        }
     }
 }
 

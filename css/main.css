@@ -3,7 +3,7 @@
 #resume .container .row #col1 #btechEdu h5, #resume .container .row #col1 #btechEdu p, #resume .container .row #col1 #auckEdu h4,
 #resume .container .row #col1 #auckEdu h5, #resume .container .row #col1 #auckEdu p, #resume .container .row #col2 #experienceHead, #resume .container .row #col2 #indiaExp h4,
 #resume .container .row #col2 #indiaExp h5, #resume .container .row #col2 #indiaExp p, #resume .container .row #col2 #auckExp h4,
-#resume .container .row #col2 #auckExp h5, #resume .container .row #col2 #auckExp p, .resumeHeader h2 {
+#resume .container .row #col2 #auckExp h5, #resume .container .row #col2 #auckExp p, .resumeHeader h2, #services #servicesRow1 #serviceHeader {
   text-transform: capitalize;
   letter-spacing: 2px;
   line-height: 25px;
@@ -116,7 +116,8 @@ nav.navbar {
 .panelBodyFormat, #bioInfo .panel .panel-body, #FrontEndSkills .panel .panel-body, #backEndSkills .panel .panel-body {
   border: 1px solid #D83B01;
   height: 250px;
-  padding: 24px; }
+  padding: 24px;
+  overflow: auto; }
 
 #aboutMeHeader > h3 {
   text-align: center;
@@ -210,41 +211,43 @@ footer > .container-fluid {
     margin-right: 4%;
     margin-top: 7px; } }
 /*=================RESUME SECTION =======================*/
-#resume .container .row #col1 {
-  padding: 2px; }
-  #resume .container .row #col1 #educationHead h3 {
+#resume .container .row {
+  margin: 0px; }
+  #resume .container .row #col1 {
+    padding: 2px; }
+    #resume .container .row #col1 #educationHead h3 {
+      text-align: center;
+      color: #D83B01;
+      padding: 0px;
+      overflow: visible; }
+    #resume .container .row #col1 #btechEdu h4,
+    #resume .container .row #col1 #btechEdu h5 {
+      text-align: center; }
+    #resume .container .row #col1 #btechEdu p {
+      padding: 6px;
+      text-align: center; }
+    #resume .container .row #col1 #auckEdu h4,
+    #resume .container .row #col1 #auckEdu h5 {
+      text-align: center; }
+    #resume .container .row #col1 #auckEdu p {
+      padding: 6px;
+      text-align: center; }
+  #resume .container .row #col2 #experienceHead {
     text-align: center;
     color: #D83B01;
     padding: 0px;
     overflow: visible; }
-  #resume .container .row #col1 #btechEdu h4,
-  #resume .container .row #col1 #btechEdu h5 {
+  #resume .container .row #col2 #indiaExp h4,
+  #resume .container .row #col2 #indiaExp h5 {
     text-align: center; }
-  #resume .container .row #col1 #btechEdu p {
+  #resume .container .row #col2 #indiaExp p {
     padding: 6px;
     text-align: center; }
-  #resume .container .row #col1 #auckEdu h4,
-  #resume .container .row #col1 #auckEdu h5 {
+  #resume .container .row #col2 #auckExp h4,
+  #resume .container .row #col2 #auckExp h5 {
     text-align: center; }
-  #resume .container .row #col1 #auckEdu p {
-    padding: 6px;
+  #resume .container .row #col2 #auckExp p {
     text-align: center; }
-#resume .container .row #col2 #experienceHead {
-  text-align: center;
-  color: #D83B01;
-  padding: 0px;
-  overflow: visible; }
-#resume .container .row #col2 #indiaExp h4,
-#resume .container .row #col2 #indiaExp h5 {
-  text-align: center; }
-#resume .container .row #col2 #indiaExp p {
-  padding: 6px;
-  text-align: center; }
-#resume .container .row #col2 #auckExp h4,
-#resume .container .row #col2 #auckExp h5 {
-  text-align: center; }
-#resume .container .row #col2 #auckExp p {
-  text-align: center; }
 
 .resumeHeader h2 {
   border-bottom: 1px solid #D83B01;
@@ -258,6 +261,41 @@ footer > .container-fluid {
   #resumeHeading {
     background-color: #D83B01;
     color: #F8F8F8; } }
+/*=======================Services CSS Rules=======================*/
+#services #servicesRow1 #serviceHeader {
+  text-align: center;
+  color: #D83B01;
+  border-top: 1px solid #D83B01;
+  margin-bottom: 3%; }
+#services #servicesRow2 #frontEndDevServices {
+  border: 1px solid #D83B01;
+  height: 300px;
+  width: 230px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 7%; }
+#services #servicesRow2 #serverDevServices {
+  border: 1px solid #D83B01;
+  height: 300px;
+  width: 230px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 60px; }
+#services #servicesRow2 #desktopDevServices {
+  border: 1px solid #D83B01;
+  height: 300px;
+  width: 230px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 80px; }
+#services #servicesRow2 #dataBaseDevServices {
+  border: 1px solid #D83B01;
+  height: 300px;
+  width: 230px;
+  text-align: center;
+  margin-bottom: 15px;
+  margin-left: 80px; }
+
 /*======================WORK process Rules=======================*/
 @media screen and (max-width: 480px) {
   #workFlowHeading {
