@@ -29,5 +29,5 @@ gulp.task('sassToCss', function() {
         .pipe(autoprefixer({
             browsers: ['last 4 versions']
         }))
-        .pipe(gulp.dest('./css'));
+        .pipe(gulp.dest('/css/sass'));
 });

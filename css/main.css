@@ -1,8 +1,9 @@
 /*===========Import statements=============*/
 .textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p, #resume .container .row #col1 #educationHead h3, #resume .container .row #col1 #btechEdu h4,
 #resume .container .row #col1 #btechEdu h5, #resume .container .row #col1 #btechEdu p, #resume .container .row #col1 #auckEdu h4,
-#resume .container .row #col1 #auckEdu h5, #resume .container .row #col1 #auckEdu p, #resume .container #col2 #experienceHead, #resume .container #col2 #indiaExp h4,
-#resume .container #col2 #indiaExp h5, #resume .container #col2 #indiaExp p, #resume .resumeHeader h2 {
+#resume .container .row #col1 #auckEdu h5, #resume .container .row #col1 #auckEdu p, #resume .container .row #col2 #experienceHead, #resume .container .row #col2 #indiaExp h4,
+#resume .container .row #col2 #indiaExp h5, #resume .container .row #col2 #indiaExp p, #resume .container .row #col2 #auckExp h4,
+#resume .container .row #col2 #auckExp h5, #resume .container .row #col2 #auckExp p, .resumeHeader h2 {
   text-transform: capitalize;
   letter-spacing: 2px;
   line-height: 25px;
@@ -35,7 +36,7 @@ nav.navbar {
 
 /**********************JUMBOTRON CSS RULES ****************/
 #headerImage {
-  background-image: url(../Images/banner.jpg);
+  background-image: url(./Images/banner.jpg);
   background-size: cover;
   height: 400px;
   background-position: center;
@@ -62,8 +63,7 @@ nav.navbar {
   position: absolute;
   top: 50%;
   left: 50%;
-  -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   z-index: 2;
   color: white; }
 
@@ -74,7 +74,7 @@ nav.navbar {
   color: white;
   padding: 12px 28px;
   cursor: pointer;
-  transition: background-color 0.7s; }
+  transition: background-color 0.7s, border 0.5s; }
 
 #follow-me-btn > a {
   white-space: normal; }
@@ -87,12 +87,6 @@ nav.navbar {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.8; }
 
-.hide {
-  display: none; }
-
-.show {
-  display: inline-block; }
-
 @media screen and (max-width: 768px) {
   #follow-me-btn > .btn-default {
     width: 150px;
@@ -104,7 +98,6 @@ nav.navbar {
     cursor: pointer;
     color: white;
     display: block; } }
-
 /**********************JUMBOTRON CSS RULES ENDS **********************/
 /*===================ABOUT ME================*/
 .panelFormat, #bioInfo .panel, #FrontEndSkills .panel, #backEndSkills .panel {
@@ -134,11 +127,14 @@ nav.navbar {
   margin-top: 0px;
   color: #D83B01; }
 
+@media screen and (max-width: 768px) {
+  #aboutMeHeader > h3 {
+    padding: 20px; } }
 /************ PARALLAX CSS RULES *********************************/
 #parallax div div {
   padding: 0px; }
   #parallax div div div {
-    background-image: url(../Images/banner-bg.jpg);
+    background-image: url(./Images/banner-bg.jpg);
     width: 100%;
     height: 300px;
     background-attachment: fixed;
@@ -163,7 +159,6 @@ nav.navbar {
         padding: 8px 12px;
         left: 92px;
         top: 56px; } }
-
 /************ PARALLAX CSS RULES ENDS *********************************/
 /************************** FOOTER CSS RULES***************************/
 footer > .container-fluid {
@@ -210,13 +205,12 @@ footer > .container-fluid {
 @media screen and (max-width: 480px) {
   #footer-content > a > .fa {
     padding: 12px; }
+
   #footer-content > a > i {
     margin-right: 4%;
     margin-top: 7px; } }
-
 /*=================RESUME SECTION =======================*/
 #resume .container .row #col1 {
-  border-right: 1px solid #D83B01;
   padding: 2px; }
   #resume .container .row #col1 #educationHead h3 {
     text-align: center;
@@ -235,22 +229,24 @@ footer > .container-fluid {
   #resume .container .row #col1 #auckEdu p {
     padding: 6px;
     text-align: center; }
-
-#resume .container #col2 #experienceHead {
+#resume .container .row #col2 #experienceHead {
   text-align: center;
   color: #D83B01;
   padding: 0px;
   overflow: visible; }
-
-#resume .container #col2 #indiaExp h4,
-#resume .container #col2 #indiaExp h5 {
+#resume .container .row #col2 #indiaExp h4,
+#resume .container .row #col2 #indiaExp h5 {
   text-align: center; }
-
-#resume .container #col2 #indiaExp p {
+#resume .container .row #col2 #indiaExp p {
   padding: 6px;
   text-align: center; }
+#resume .container .row #col2 #auckExp h4,
+#resume .container .row #col2 #auckExp h5 {
+  text-align: center; }
+#resume .container .row #col2 #auckExp p {
+  text-align: center; }
 
-#resume .resumeHeader h2 {
+.resumeHeader h2 {
   border-bottom: 1px solid #D83B01;
   border-top: 1px solid #D83B01;
   padding: 20px;
@@ -262,9 +258,10 @@ footer > .container-fluid {
   #resumeHeading {
     background-color: #D83B01;
     color: #F8F8F8; } }
-
 /*======================WORK process Rules=======================*/
 @media screen and (max-width: 480px) {
   #workFlowHeading {
     background-color: #D83B01;
     color: #F8F8F8; } }
+
+/*# sourceMappingURL=main.css.map */

@@ -22,7 +22,6 @@ $primary-color: #D83B01;
     .container {
         .row {
             #col1 {
-                border-right: 1px solid $primary-color;
                 padding: 2px;
                 #educationHead {
                     h3 {
@@ -85,7 +84,6 @@ $primary-color: #D83B01;
                         text-align: center;
                     }
                     p {
-                        padding: 6px;
                         @extend .textFormat;
                         text-align: center;
                     }
@@ -107,8 +105,6 @@ $primary-color: #D83B01;
     }
 }
 
-
-}
 @media screen and (max-width: 480px) {
     #resumeHeading {
         background-color: $primary-color;
@@ -116,7 +112,9 @@ $primary-color: #D83B01;
     }
 }
 
+
 /*======================WORK process Rules=======================*/
+
 @media screen and (max-width: 480px) {
     #workFlowHeading {
         background-color: $primary-color;

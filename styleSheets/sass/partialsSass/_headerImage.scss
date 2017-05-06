@@ -1,7 +1,7 @@
 /**********************JUMBOTRON CSS RULES ****************/
 
 #headerImage {
-    background-image: url(../Images/banner.jpg);
+    background-image: url(./Images/banner.jpg);
     background-size: cover;
     height: 400px;
     background-position: center;
@@ -44,7 +44,7 @@
     color: white;
     padding: 12px 28px;
     cursor: pointer;
-    transition: background-color 0.7s;
+    transition: background-color 0.7s, border 0.5s;
 }
 
 #follow-me-btn>a {
@@ -60,14 +60,6 @@
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
         opacity: 0.8;
     }
-}
-
-.hide {
-    display: none;
-}
-
-.show {
-    display: inline-block;
 }
 
 @media screen and (max-width: 768px) {
