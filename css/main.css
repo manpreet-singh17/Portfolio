@@ -133,23 +133,22 @@ nav.navbar {
     padding: 20px; } }
 /************ PARALLAX CSS RULES *********************************/
 #parallax div div {
-  padding: 0px; }
-  #parallax div div div {
-    background-image: url(./Images/banner-bg.jpg);
-    width: 100%;
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-    #parallax div div div #contactMebtn {
-      border: 0px;
-      border-radius: 0px;
-      background-color: #D83B01;
-      padding: 1.5% 4%;
-      position: relative;
-      left: 38%;
-      top: 40%; }
+  padding: 0px;
+  background-image: url(./Images/banner-bg.jpg);
+  width: 100%;
+  height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #parallax div div #contactMebtn {
+    border: 0px;
+    border-radius: 0px;
+    background-color: #D83B01;
+    padding: 1.5% 4%;
+    position: relative;
+    left: 12%;
+    top: 40%; }
 
 @media screen and (max-width: 480px) {
   #parallax div div {
@@ -158,8 +157,8 @@ nav.navbar {
       height: 150px; }
       #parallax div div div #contactMebtn {
         padding: 8px 12px;
-        left: 92px;
-        top: 56px; } }
+        left: 19%;
+        top: 36%; } }
 /************ PARALLAX CSS RULES ENDS *********************************/
 /************************** FOOTER CSS RULES***************************/
 footer > .container-fluid {
@@ -268,34 +267,54 @@ footer > .container-fluid {
   border-top: 1px solid #D83B01;
   margin-bottom: 3%; }
 #services #servicesRow2 #frontEndDevServices {
-  border: 1px solid #D83B01;
-  height: 300px;
-  width: 230px;
+  border-right: 1px solid #D83B01;
   text-align: center;
+  height: 300px;
   margin-bottom: 15px;
-  margin-left: 7%; }
+  /*height: 300px;
+  width: 230px;
+  margin-bottom: 15px;
+  margin-left: 5%;*/ }
 #services #servicesRow2 #serverDevServices {
-  border: 1px solid #D83B01;
-  height: 300px;
-  width: 230px;
+  border-right: 1px solid #D83B01;
   text-align: center;
+  height: 300px;
   margin-bottom: 15px;
-  margin-left: 60px; }
+  /* height: 300px;
+  width: 230px;
+  margin-bottom: 15px;
+  margin-left: 7%;*/ }
 #services #servicesRow2 #desktopDevServices {
-  border: 1px solid #D83B01;
-  height: 300px;
-  width: 230px;
+  border-right: 1px solid #D83B01;
   text-align: center;
+  height: 300px;
   margin-bottom: 15px;
-  margin-left: 80px; }
+  /*height: 300px;
+  width: 230px;
+  margin-bottom: 15px;
+  margin-left: 7%;*/ }
 #services #servicesRow2 #dataBaseDevServices {
-  border: 1px solid #D83B01;
-  height: 300px;
-  width: 230px;
   text-align: center;
+  height: 300px;
   margin-bottom: 15px;
-  margin-left: 80px; }
+  /*height: 300px;
+  width: 230px;
+  margin-bottom: 15px;
+  margin-left: 7%;*/ }
 
+@media screen and (max-width: 768px) {
+  #services #servicesRow2 #frontEndDevServices {
+    border-right: 0px;
+    border-bottom: 1px solid #D83B01; }
+  #services #servicesRow2 #serverDevServices {
+    border-right: 0px;
+    border-bottom: 1px solid #D83B01; }
+  #services #servicesRow2 #desktopDevServices {
+    border-right: 0px;
+    border-bottom: 1px solid #D83B01; }
+  #services #servicesRow2 #dataBaseDevServices {
+    border-right: 0px;
+    border-bottom: 1px solid #D83B01; } }
 /*======================WORK process Rules=======================*/
 @media screen and (max-width: 480px) {
   #workFlowHeading {
