@@ -1,12 +1,12 @@
 /*===========Import statements=============*/
-.textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p, #resume .container .row #col1 #educationHead h3, #resume .container .row #col1 #btechEdu h4,
+.textFormat, .panelHeadingFormat, #bioInfo .panel .panel-heading, #FrontEndSkills .panel .panel-heading, #backEndSkills .panel .panel-heading, #aboutMeHeader > h3, #bioInfo .panel .panel-body p, #bioInfo .panel .panel-body p span, #FrontEndSkills .panel .panel-body p, #backEndSkills .panel .panel-body p, #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo, #resume .container .row #col1 #educationHead h3, #resume .container .row #col1 #btechEdu h4,
 #resume .container .row #col1 #btechEdu h5, #resume .container .row #col1 #btechEdu p, #resume .container .row #col1 #auckEdu h4,
 #resume .container .row #col1 #auckEdu h5, #resume .container .row #col1 #auckEdu p, #resume .container .row #col2 #experienceHead, #resume .container .row #col2 #indiaExp h4,
 #resume .container .row #col2 #indiaExp h5, #resume .container .row #col2 #indiaExp p, #resume .container .row #col2 #auckExp h4,
 #resume .container .row #col2 #auckExp h5, #resume .container .row #col2 #auckExp p, .resumeHeader h2, #services #servicesRow1 #serviceHeader {
   text-transform: capitalize;
   letter-spacing: 2px;
-  line-height: 25px;
+  line-height: 20px;
   text-align: justify;
   overflow: auto; }
 
@@ -132,33 +132,65 @@ nav.navbar {
   #aboutMeHeader > h3 {
     padding: 20px; } }
 /************ PARALLAX CSS RULES *********************************/
-#parallax div div {
+#parallax .row div {
   padding: 0px;
   background-image: url(./Images/banner-bg.jpg);
   width: 100%;
-  height: 200px;
+  height: 300px;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
-  #parallax div div #contactMebtn {
-    border: 0px;
-    border-radius: 0px;
+#parallax .row #contactMebtn {
+  border: 0px;
+  border-radius: 0px;
+  background-color: #D83B01;
+  padding: 1.5% 4%;
+  position: relative;
+  left: 38%;
+  top: 40%; }
+
+#contactMeModal .modal-dialog .modal-content {
+  border-radius: 0px; }
+  #contactMeModal .modal-dialog .modal-content .modal-header {
     background-color: #D83B01;
-    padding: 1.5% 4%;
-    position: relative;
-    left: 12%;
-    top: 40%; }
+    padding: 25px 20px; }
+    #contactMeModal .modal-dialog .modal-content .modal-header button {
+      color: white; }
+  #contactMeModal .modal-dialog .modal-content .modal-body .text-center .fa-address-book {
+    border: 7px double;
+    border-radius: 50%;
+    padding: 30px;
+    background-color: #D83B01;
+    color: white; }
+  #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center; }
+    #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo a {
+      border-radius: 0px;
+      border: 1px solid #D83B01;
+      text-transform: uppercase;
+      font-weight: bold;
+      padding: 12px 16px;
+      transition: background-color 1s, color 1.2s; }
+    #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo a:hover {
+      background-color: #D83B01;
+      color: white; }
+#contactMeModal .modal-dialog .modal-footer {
+  background-color: #D83B01;
+  padding: 30px;
+  border: 0px solid; }
 
 @media screen and (max-width: 480px) {
-  #parallax div div {
-    padding: 0px; }
-    #parallax div div div {
-      height: 150px; }
-      #parallax div div div #contactMebtn {
-        padding: 8px 12px;
-        left: 19%;
-        top: 36%; } }
+  #parallax .row div {
+    padding: 0px;
+    height: 150px; }
+    #parallax .row div #contactMebtn {
+      padding: 14px 24px;
+      position: relative;
+      left: 15%;
+      top: 35%; } }
 /************ PARALLAX CSS RULES ENDS *********************************/
 /************************** FOOTER CSS RULES***************************/
 footer > .container-fluid {
@@ -176,7 +208,8 @@ footer > .container-fluid {
   border-radius: 50%; }
 
 #footer-content > a > i {
-  margin-right: 2%; }
+  margin-right: 2%;
+  transition: background-color 0.8s; }
 
 #address {
   color: #F8F8F8;
