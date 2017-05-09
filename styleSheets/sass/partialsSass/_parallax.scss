@@ -49,6 +49,7 @@
                     @extend .textFormat;
                     text-transform: uppercase;
                     font-weight: bold;
+                    font-size: 14px;
                     text-align: center;
                     a {
                         border-radius: 0px;
@@ -57,6 +58,7 @@
                         font-weight: bold;
                         padding: 12px 16px;
                         transition: background-color 1s, color 1.2s;
+                        color: $primary-color;
                     }
                     a:hover {
                         background-color: $primary-color;

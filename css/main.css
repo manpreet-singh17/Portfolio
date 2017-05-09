@@ -166,6 +166,7 @@ nav.navbar {
   #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo {
     text-transform: uppercase;
     font-weight: bold;
+    font-size: 14px;
     text-align: center; }
     #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo a {
       border-radius: 0px;
@@ -173,7 +174,8 @@ nav.navbar {
       text-transform: uppercase;
       font-weight: bold;
       padding: 12px 16px;
-      transition: background-color 1s, color 1.2s; }
+      transition: background-color 1s, color 1.2s;
+      color: #D83B01; }
     #contactMeModal .modal-dialog .modal-content .modal-body #contactInfo a:hover {
       background-color: #D83B01;
       color: white; }
